@@ -1,0 +1,142 @@
+[
+  {
+    "id": "Q01",
+    "question": "Can I return an opened laptop on day 8 if I have the original box and all accessories?",
+    "reference_answer": "Yes. Under the current policy effective 1 July 2026, opened laptops can be returned within 10 days of delivery if they are in good condition and include the original box, all accessories, manuals and the invoice. (An older 2025 ticket mentions a 7-day window, but the current policy replaces it.)",
+    "expected_sources": ["RR-001", "RR-002"],
+    "expected_indexes": ["policy_index"]
+  },
+  {
+    "id": "Q02",
+    "question": "My Galaxy Buds3 Pro left earbud won't connect. Is this a known issue, and has the same problem been resolved for another customer? What fixed it?",
+    "reference_answer": "Yes, it's a known issue, usually after pairing with a new phone. Put both earbuds in the case and close the lid for 10 seconds, then reset them from the Galaxy Wearable app (or by holding both touchpads for 7 seconds) and pair again as a new device. A previous customer had the same problem after switching phones (TCK-1001): the earbuds were still paired with the old phone, and resetting and pairing again as a new device fixed it. If it still doesn't work, treat it as defective (within 48 hours of delivery) or raise a warranty claim.",
+    "expected_sources": ["KI-001", "TCK-1001"],
+    "expected_indexes": ["product_index", "ticket_index"]
+  },
+  {
+    "id": "Q03",
+    "question": "How long does delivery take to a remote pincode, and is it free?",
+    "reference_answer": "Delivery to remote pincodes takes 5 to 9 business days. The normal delivery charges apply, so orders of Rs 499 and above are still free. Express delivery isn't available for remote pincodes.",
+    "expected_sources": ["SH-002"],
+    "expected_indexes": ["policy_index"]
+  },
+  {
+    "id": "Q04",
+    "question": "A customer wants to change the address after the order shipped. What is the official process, and do we have a resolved case like this?",
+    "reference_answer": "Official process (OG-002): the address can't be changed after shipping. The customer can ask the courier to reschedule delivery to the same address, or refuse the delivery and place a new order with the correct address. Resolved case (TCK-1004): a customer who had moved refused the delivery of a shipped Sony WH-1000XM5 order and placed a new order with the new address. The refund for the first order was issued after the package reached the warehouse.",
+    "expected_sources": ["OG-002", "TCK-1004"],
+    "expected_indexes": ["order_index", "ticket_index"]
+  },
+  {
+    "id": "Q05",
+    "question": "What does policy RR-004 say?",
+    "reference_answer": "Refunds start after the returned product passes the quality check. UPI and wallet: 1 to 3 business days. Credit/debit card and net banking: 5 to 7 business days. Cash on Delivery: to the customer's bank account within 5 to 7 business days, after they add bank details on the Orders page. EMI: refunded to the card, and the bank closes the EMI plan.",
+    "expected_sources": ["RR-004"],
+    "expected_indexes": ["policy_index"]
+  },
+  {
+    "id": "Q06",
+    "question": "A customer received a damaged phone and wants a refund instead of a replacement. What is the official process, and do we have a previous resolved case where a refund was issued?",
+    "reference_answer": "Official process: the customer must report it within 48 hours of delivery using Report a Problem, with photos of the product, box and shipping label, plus an unboxing video if available. A pickup is scheduled and the product goes through a quality check. For mobile phones, a replacement is given first; a refund is given only if a replacement unit (same model and colour) isn't available. Refund timelines depend on the payment method: UPI and wallet 1 to 3 business days, cards and net banking 5 to 7 business days. Resolved case (TCK-1002): an iPhone 16 arrived with a cracked screen; a replacement was not available in the same colour, so a full refund was issued to the credit card.",
+    "expected_sources": ["RR-003", "RR-004", "RR-005", "OG-005", "TCK-1002"],
+    "expected_indexes": ["policy_index", "order_index", "ticket_index"]
+  },
+  {
+    "id": "Q07",
+    "question": "Do you sell refrigerators?",
+    "reference_answer": "I don't know based on the available information.",
+    "expected_sources": [],
+    "expected_indexes": []
+  },
+  {
+    "id": "Q08",
+    "question": "Can I pay Cash on Delivery for a laptop that costs Rs 60,000?",
+    "reference_answer": "No. Cash on Delivery is available only for orders up to Rs 50,000. An order costing Rs 60,000 must be paid online.",
+    "expected_sources": ["SH-004"],
+    "expected_indexes": ["policy_index"]
+  },
+  {
+    "id": "Q09",
+    "question": "Does the iPhone 16 include a power adapter, and what charger can I use for fast charging?",
+    "reference_answer": "No. The iPhone 16 box contains the phone and a USB-C to USB-C cable, but no power adapter. You can use the Anker 20W USB-C Charger or another USB-C Power Delivery charger rated at 20W or more for fast charging.",
+    "expected_sources": ["FAQ-001", "FAQ-012"],
+    "expected_indexes": ["product_index"]
+  },
+  {
+    "id": "Q10",
+    "question": "How should a customer report a damaged laptop, and what happens after the report?",
+    "reference_answer": "The customer should open the order on the Orders page and select Report a Problem within 48 hours of delivery. They should upload photos of the product, box and shipping label, and an unboxing video if available. A pickup is scheduled within 2 business days, followed by a quality check. A replacement or refund is then handled under the applicable policies.",
+    "expected_sources": ["OG-005", "RR-003"],
+    "expected_indexes": ["order_index", "policy_index"]
+  },
+  {
+    "id": "Q11",
+    "question": "An order has already shipped, so the customer cannot change its address. If they refuse delivery, how is the order handled and refunded?",
+    "reference_answer": "The customer can ask the courier to reschedule delivery to the same address, or refuse delivery and place a new order with the correct address. If they refuse it, the package is returned to Dandes Electronics and a prepaid order is fully refunded once it reaches the warehouse. A Cash on Delivery order is cancelled.",
+    "expected_sources": ["OG-002", "SH-005"],
+    "expected_indexes": ["order_index", "policy_index"]
+  },
+  {
+    "id": "Q12",
+    "question": "What should a customer do if the exchange value for their old phone is reduced when buying a OnePlus 13?",
+    "reference_answer": "The reduced value may be due to a screen crack, a missing charger or an inaccurate condition entered at checkout. The customer should enter the old phone's condition correctly. If they do not accept the revised value at the doorstep, the exchange is cancelled and they pay the full price.",
+    "expected_sources": ["KI-008"],
+    "expected_indexes": ["product_index"]
+  },
+  {
+    "id": "Q13",
+    "question": "One AirPods Pro 2 earbud is not charging in its case. What can the customer try?",
+    "reference_answer": "Dirt on the charging contacts is a usual cause. Gently clean the earbud and case contacts with a dry cotton swab and check that the earbud sits fully in the case. If it still does not charge, raise an Apple warranty claim.",
+    "expected_sources": ["KI-002"],
+    "expected_indexes": ["product_index"]
+  },
+  {
+    "id": "Q14",
+    "question": "A customer returned an item bought with Cash on Delivery but has not received the refund. What should they do, and how long can it take?",
+    "reference_answer": "Ask the customer to add their bank details on the Orders page. The Cash on Delivery refund is sent to their bank account within 5 to 7 business days after the details are added. In resolved case TCK-1006, the refund was credited in 5 business days after the customer added bank details.",
+    "expected_sources": ["RR-004", "TCK-1006"],
+    "expected_indexes": ["policy_index", "ticket_index"]
+  },
+  {
+    "id": "Q15",
+    "question": "What warranty does the Galaxy S25 have, and where can the customer claim it?",
+    "reference_answer": "The Galaxy S25 sold by Dandes Electronics is the official India version and comes with a 1-year Samsung manufacturer warranty. The customer can claim it at an authorised Samsung service centre in India and should keep the Dandes Electronics invoice for the claim.",
+    "expected_sources": ["FAQ-002"],
+    "expected_indexes": ["product_index"]
+  },
+  {
+    "id": "Q16",
+    "question": "Tracking for a ThinkPad E14 order has not updated for 4 business days. What should support do, and is there a similar resolved case?",
+    "reference_answer": "If tracking has not updated for more than 3 business days, the support team should raise a courier escalation. In resolved case TCK-1013, a courier escalation for a ThinkPad E14 order located the package at a hub, and it was delivered within 2 days.",
+    "expected_sources": ["OG-003", "TCK-1013"],
+    "expected_indexes": ["order_index", "ticket_index"]
+  },
+  {
+    "id": "Q17",
+    "question": "Why might a customer in Bengaluru be unable to select express delivery for a Pixel 9 order paid by Cash on Delivery, and what resolved a similar case?",
+    "reference_answer": "Express delivery is not available for Cash on Delivery orders. In resolved case TCK-1012, a Bengaluru customer paid online instead and selected express delivery.",
+    "expected_sources": ["SH-003", "TCK-1012"],
+    "expected_indexes": ["policy_index", "ticket_index"]
+  },
+  {
+    "id": "Q18",
+    "question": "What are the store's opening hours today?",
+    "reference_answer": "I don't know based on the available information.",
+    "expected_sources": [],
+    "expected_indexes": []
+  },
+  {
+    "id": "Q19",
+    "question": "What is the current selling price of the iPhone 16 at Dandes Electronics?",
+    "reference_answer": "I don't know based on the available information.",
+    "expected_sources": [],
+    "expected_indexes": []
+  },
+  {
+    "id": "Q20",
+    "question": "Where is my order 123456 right now?",
+    "reference_answer": "I don't know based on the available information.",
+    "expected_sources": [],
+    "expected_indexes": []
+  }
+]
